@@ -1,6 +1,0 @@
-{
-  "title": "docs: 添加 MIT LICENSE（© 2026 mcc）并明确许可范围",
-  "head": "add-license",
-  "base": "main",
-  "body": "## 这个 PR 做了什么\n\n给仓库补上根目录 `LICENSE`，并把 README 的许可说明拆成两层，避免动画素材的「禁止商用」条款被整体 MIT 覆盖掉。\n\n### 改动\n\n- **新增 `LICENSE`** —— MIT，版权署名 `mcc`\n- **`README.md` 许可章节** —— 从原来的两条列表改为表格，明确区分三个范围：\n\n| 范围 | 许可 |\n|---|---|\n| `pet_player.py`、`convert_webm.py`（本仓库代码） | MIT，© 2026 mcc |\n| `dsh-pet-main/`（上游项目快照） | MIT，© 2026 PC2005-cloud |\n| 动画素材（`frames/`、上游 `assets/`、提示词、源视频） | 允许开源使用，**禁止商用** |\n\n- **`README.md` 顶部** —— license 徽章链接回 `./LICENSE`\n\n### 为什么需要\n\n仓库此前没有根目录授权文件，代码实际上处于「保留所有权利」的默认状态，别人无法合法复用。同时上游素材是「禁止商用」条款，需要和 MIT 明确区分，否则容易被误读为整个仓库都是 MIT。\n\n### 只动了这些\n\n`LICENSE`（新增）+ `README.md`，没有碰 `dsh-pet-main/` 的任何内容，上游的 `dsh-pet-main/LICENSE`（© 2026 PC2005-cloud）保持原样。\n\n### 如何验证\n\n```sh\ngit diff main..add-license --stat\n#  LICENSE   | 21 +++++++++++++++++++++\n#  README.md | 13 +++++++++----\n```\n"
-}
