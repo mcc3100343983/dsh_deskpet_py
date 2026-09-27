@@ -1,7 +1,7 @@
 # dsh-pet 桌面宠物 🐾
 
 <p align="center">
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-orange">
+  <a href="./LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-orange"></a>
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows-0078D4">
   <img alt="python" src="https://img.shields.io/badge/python-3.8%2B-3776AB">
   <img alt="animations" src="https://img.shields.io/badge/animations-97%20available-ff69b4">
@@ -197,7 +197,12 @@ dsh-pet-main/  （整个目录，或至少保留 dsh-pet-main/dsh-pet/assets/thu
 
 ## 致谢与许可
 
-动画素材（`frames/` 的源 webm、`dsh-pet-main/` 整个目录）来自开源项目 **[PC2005-cloud/dsh-pet](https://github.com/PC2005-cloud/dsh-pet)** —— 一套「提示词 → 绿幕视频 → 透明动画 → DSH 插件」的完整素材生成链，97 段手绘风透明动画由豆包生成。本仓库保留了该项目的原始授权文件：
+动画素材（`frames/` 的源 webm、`dsh-pet-main/` 整个目录）来自开源项目 **[PC2005-cloud/dsh-pet](https://github.com/PC2005-cloud/dsh-pet)** —— 一套「提示词 → 绿幕视频 → 透明动画 → DSH 插件」的完整素材生成链，97 段手绘风透明动画由豆包生成。
 
-- **代码：MIT**（原始版权声明见 [`dsh-pet-main/LICENSE`](dsh-pet-main/LICENSE)）
-- **素材（动画 / 提示词 / 源视频）：允许开源使用，禁止商用**
+许可分两层：
+
+| 范围 | 许可 |
+|---|---|
+| 本仓库的播放器代码（`pet_player.py`、`convert_webm.py`） | **MIT**，© 2026 mcc（见 [`LICENSE`](LICENSE)） |
+| `dsh-pet-main/` 整个目录（上游项目快照，含其代码与文档） | **MIT**，© 2026 PC2005-cloud（见 [`dsh-pet-main/LICENSE`](dsh-pet-main/LICENSE)） |
+| 动画素材（本仓库 `frames/`、上游 `assets/`、提示词、源视频） | 允许开源使用，**禁止商用** |
