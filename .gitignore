@@ -1,0 +1,21 @@
+# ── 运行时自动生成的帧缓存（预解码 .npy，可随时删除，首次运行会自动重建）──
+cache/
+
+# ── 本地状态（窗口位置与缩放，因机器而异，程序缺失时会自动生成默认值）──
+settings.json
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+.uv-cache/
+
+# ── IDE / 编辑器 ──
+.idea/
+.vscode/
+*.swp
+
+# ── 系统文件 ──
+.DS_Store
+Thumbs.db
+desktop.ini
